@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimiawApp.Contacto"
+             BackgroundColor="Black"
+             Title="Datos de Contacto">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10, 20, 10, 20">
+                <Label HorizontalTextAlignment="Center" TextColor="White" Text="Contacta con Nosotros" FontSize="Large" FontAttributes="Bold" BackgroundColor="#6633FF"/>
+                <Image Source="contacta.gif"/>
+                <Label HorizontalTextAlignment="Center" TextType="Html" TextColor="White">
+                    <Label.Text>
+                        <![CDATA[
+                        <p align=center>Si quieres enviarnos alguna sugerencia de anime para la sección de
+                        recomendaciones, por favor contacta con nosotros. Envíanos un correo electrónico o un
+                        WhatsApp con tus sugerencias :)</p>
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Label HorizontalTextAlignment="Center" TextType="Html" TextColor="White">
+                    <Label.Text>
+                        <![CDATA[
+                        <p align=center>Correo del Admin: danialanramirez43@gmail.com<p>
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Label HorizontalTextAlignment="Center" TextType="Html" TextColor="White">
+                    <Label.Text>
+                        <![CDATA[
+                        <p align=center>Correo de la Admin: yumiikum@gmail.com<p>
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Label HorizontalTextAlignment="Center" TextType="Html" TextColor="White">
+                    <Label.Text>
+                        <![CDATA[
+                        <p align=center>WhatsApp Oficial: +52 59 7123 2100<p>
+                        ]]>
+                    </Label.Text>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

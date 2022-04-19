@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimiawApp.Acerca"
+             BackgroundColor="Black"
+             Title="Acerca de">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="10, 20, 10, 20">
+                <Label HorizontalTextAlignment="Center" TextColor="White" Text="Acerca de la App" FontSize="Large" FontAttributes="Bold" BackgroundColor="#6633FF"/>
+                <Image Source="anime.jpg"/>
+                <Label TextColor="White" TextType="Html" HorizontalOptions="Center">
+                    <Label.Text>
+                        <![CDATA[Animiaw v.1.2 (Última actualización 14 de julio de 2021)
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Label TextColor="White" TextType="Html">
+                    <Label.Text>
+                        <![CDATA[Si eres nuevo viendo anime y quieres empezar a adentrarte en el mundo de este maravilloso
+                        arte audiovisual, esta aplicación es perfecta para tí. Aquí encontrarás recomendaciones de 
+                        los mejores animes según la opinión popular, clasificados por géneros para que 
+                        puedas seleccionar aquellos que más se adecúen a tus gustos y tiempos. Si ya llevas tiempo
+                        viendo anime, esta aplicación te será útil de igual manera para descubrir nuevas joyas
+                        audiovisuales que talvez no hayas tenido la oportundad de ver anteriormente, además de que 
+                        podrás mantenerte actualizado acerca de los nuevos animes en emisión actualmente y estarás
+                        al tanto de las noticias más relevantes relacionadas al mundo del anime y manga.
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Label TextColor="White" TextType="Html">
+                    <Label.Text>
+                        <![CDATA[Si quieres aportar a la comunidad con alguna recomendación que no hayas visto en la 
+                        aplicación, contacta con nosotros.
+                        ]]>
+                    </Label.Text>
+                </Label>
+                <Button Text="Contactos" BackgroundColor="#6666FF" 
+                        TextColor="White"
+                        Clicked="Button_Clicked"/>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

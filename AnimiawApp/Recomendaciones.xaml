@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimiawApp.Recomendaciones"
+             Title="Recomendaciones Anime"
+             BackgroundColor="#9966CC">
+    <Grid>
+        <TableView Intent="Menu" HasUnevenRows="True" RowHeight="75" x:Name="vistaRecomendaciones">
+            <TableRoot>
+                <TableSection>
+                    <ViewCell Height="160">
+                        <StackLayout Padding="15,5,15,5" Orientation="Vertical" BackgroundColor="Black">
+                            <Image Source="logo.jpg" />
+                            <Label Text="Animiaw Recomendaciones Anime V.1.1" VerticalOptions="End" HorizontalOptions="Center" TextColor="White" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+
+                <TableSection>
+                    <ViewCell Tapped="pagEstrenos" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="estrenos.png" />
+                            <Label Text="Próximos estrenos de Anime" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+                    
+                    <ViewCell Tapped="pagEmision" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="emision.png" />
+                            <Label Text="Recomendaciones Animes en Emisión" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagAccion" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="accion.png" />
+                            <Label Text="Recomendaciones Animes de Acción" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagMisterio" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="misterio.png" />
+                            <Label Text="Recomendaciones Animes de Misterio" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagComedia" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="clown.png" />
+                            <Label Text="Recomendaciones Animes de Comedia" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagRomance" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="romance.png" />
+                            <Label Text="Recomendaciones Animes de Romance" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagEscolares" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="school.png" />
+                            <Label Text="Recomendaciones Animes Escolares" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagMusicales" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="musica.png" />
+                            <Label Text="Recomendaciones Animes de Música" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                    <ViewCell Tapped="pagMecha" Height="65">
+                        <StackLayout Padding="15,5,15,5" Orientation="Horizontal" BackgroundColor="Black">
+                            <Image Source="mecha.png" />
+                            <Label Text="Recomendaciones Animes Mecha" VerticalOptions="Center" TextColor="White"/>
+                        </StackLayout>
+                    </ViewCell>
+                    
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </Grid>
+</ContentPage>

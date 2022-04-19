@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimiawApp.Login"
+             Title="Login"
+             BackgroundColor="Black">
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="fondo5.png" Aspect="AspectFill" />
+                <BoxView Color="#6666FF" Opacity="0.7" />
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="1" Padding="30,0" Margin="0,50,0,10">
+                        <Image Source="logo.png" Grid.Row="0" Aspect="AspectFill" />
+                        <Label Text="Animiaw Recomendaciones Anime" VerticalOptions="End"
+                    HorizontalOptions="Center" TextColor="White" Padding="0,2,0,50"/>
+                        
+                        <Entry Placeholder="E-mail" x:Name="txtCorreo" TextColor="White" PlaceholderColor="White"/>
+                        <Entry Placeholder="Contraseña" x:Name="txtContrasena" TextColor="White" PlaceholderColor="White"/>
+                        <Entry Placeholder="Respuesta del Servidor" x:Name="txtRespuesta" IsVisible="False" BackgroundColor="White"/>
+                        <Button Text="Iniciar Sesión" x:Name="btnEntrar" Clicked="btnEntrar_Clicked" BackgroundColor="#BD6BDC" 
+                        TextColor="White" CornerRadius="20"/>
+                        
+                        <StackLayout Orientation="Horizontal" Padding="10,0" Margin="0,15,0,15" >
+                            <Label Text="Regístrese" FontAttributes="Bold" TextColor="White" HorizontalOptions="StartAndExpand"/>
+                            <Label Text="¿Olvidó su contraseña?" FontAttributes="Bold" TextColor="White" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                    <StackLayout Grid.Row="2" HorizontalOptions="Center" Margin="0,5,0,40" >
+                        <Label Text="Iniciar sesión con: " HorizontalOptions="Center" TextColor="White" FontAttributes="Bold" />
+                        <StackLayout Orientation="Horizontal" Margin="0,10,0,15">
+                            <Image Grid.Row="0" Source="face.png" WidthRequest="45" HeightRequest="45" />
+                            <Image Grid.Row="0" Source="gmail.png" WidthRequest="45" HeightRequest="45" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
